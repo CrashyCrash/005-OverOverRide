@@ -1,0 +1,70 @@
+/* Mobile-first base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  width: var(--container-width);
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+/* Responsive typography */
+h1 {
+  font-size: var(--text-xxl);
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: var(--text-xl);
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: var(--text-lg);
+  line-height: 1.4;
+}
+
+p {
+  font-size: var(--text-md);
+  line-height: 1.6;
+}
+
+@media (min-width: 480px) {
+  html {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 19px;
+  }
+}
